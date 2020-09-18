@@ -1,0 +1,142 @@
+.ex-1-square {
+    transition: 3s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square {
+    transition: 5s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-3-square {
+    transition:1.5s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: 2s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: 2s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+.ex-6-img {
+    transition: 0.4s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter:contrast(150%);
+    filter: sepia(90%);
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    border-radius: 3%;
+    filter: brightness(70%) hue-rotate(70deg);
+    filter:
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(1) contrast(1.5);
+    border-radius: 5%;
+    transform: scale(1.5);
+}
+
+.ex-10-icon {
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+		}
+	to {
+		transform: rotate(360deg);
+		}
+}
+
+.ex-11-icon {
+    animation: rotate-reverse75 2s infinite linear;
+    animation-direction: alternate-reverse 1s linear;
+}
+
+@keyframes rotate-reverse75 {
+    0% {transform: rotate(0deg);}
+    75% {transform: rotate(270deg);}
+}
+
+.ex-12-top-white {
+    animation: run-top 2s infinite linear;
+
+}
+
+.ex-12-bottom-white {
+    animation: run-bottom 2s infinite linear;
+    animation-direction: reverse;
+}
+
+@keyframes run-top {
+    0% {left: 5%;}
+    50% {left: 65%;}
+    100% {left: 5%;}
+
+}
+@keyframes run-bottom {
+    0% {left: 65%;}
+    50% {left: 5%;}
+    100% {left: 65%;}
+
+}
+
+.ex-13-top-white {
+    animation: giro-su 4s infinite linear;
+}
+
+.ex-13-bottom-white {
+    animation: giro-giu 4s infinite linear;
+}
+
+@keyframes giro-su {
+    0% {left: 0%;}
+    35% {left: 70%; top: -10%;}
+    50% {left: 80%; top: 100%;}
+    65% {left: 100%;}
+
+}
